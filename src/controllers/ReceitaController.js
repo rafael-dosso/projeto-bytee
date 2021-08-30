@@ -3,6 +3,13 @@ const Usuario = require('../models/Usuario');
 const Categoria = require('../models/Categoria')
 
 module.exports = {
+
+    async list(req, res) {
+        const receitas = Receita.findAll();
+
+        return res.json(receitas);
+    },
+
     async indexUsuario(req, res) {
         const { usuarioId } = req.params;
 
@@ -25,7 +32,7 @@ module.exports = {
         });
 
         if (!categoria) {
-            return res.status(400).json({ error: 'Usuario nao encontrado' })
+            return res.status(400).json({ error: 'Categoria nao encontrada' })
         }
 
         return res.json(categoria.receitas);
@@ -57,6 +64,6 @@ module.exports = {
             rendimento,
         })
 
-        res.json(receita);
+        return res.json(receita);
     }
 }
