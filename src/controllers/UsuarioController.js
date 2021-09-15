@@ -1,5 +1,4 @@
 const Usuario = require('../models/Usuario');
-const { index } = require('./CategoriaController');
 
 module.exports = {
     async list(req, res) {

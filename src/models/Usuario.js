@@ -16,7 +16,12 @@ class Usuario extends Model {
         this.hasMany(models.Receita, {
             foreignKey: 'usuarioId',
             as: 'receitas',
-        })
+        });
+        this.belongsToMany(models.Receita, {
+            foreignKey: 'usuarioId',
+            through: 'curtidas',
+            as: 'curtida'
+        });
     }
 }
 

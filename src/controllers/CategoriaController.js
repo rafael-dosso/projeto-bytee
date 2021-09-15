@@ -1,8 +1,7 @@
-const { beforeFindAfterExpandIncludeAll } = require('../models/Categoria');
 const Categoria = require('../models/Categoria');
 
 module.exports = {
-    async list(req, res) {
+    async index(req, res) {
         const { id } = req.params;
 
         const categoria = await Categoria.findByPk(id);

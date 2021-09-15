@@ -5,7 +5,7 @@ const Categoria = require('../models/Categoria')
 module.exports = {
 
     async list(req, res) {
-        const receitas = Receita.findAll();
+        const receitas = await Receita.findAll();
 
         return res.json(receitas);
     },

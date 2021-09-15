@@ -22,6 +22,11 @@ class Receita extends Model {
             foreignKey: 'categoriaId',
             as: 'categoria'
         });
+        this.belongsToMany(models.Usuario, {
+            foreignKey: 'receitaId',
+            through: 'curtidas',
+            as: 'curtida'
+        });
     }
 }
 
