@@ -16,9 +16,9 @@ module.exports = {
     },
 
     async store(req, res) {
-        const { nome, email, senha } = req.body;
+        const { nome, email, senha, imagem } = req.body;
 
-        const usuario = await Usuario.create({ nome, email, senha });
+        const usuario = await Usuario.create({ nome, email, senha, imagem });
 
         return res.json(usuario);
     },

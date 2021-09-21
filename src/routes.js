@@ -25,6 +25,5 @@ routes.get('/categorias/:categoriaId/receitas', ReceitaController.indexCategoria
 // curtidas
 routes.post('/curtidas', CurtidaController.store);
 routes.get('/receitas/:receitaId/curtidas/count', CurtidaController.count);
-routes.delete('/curtidas', CurtidaController.delete);
 
 module.exports = routes;

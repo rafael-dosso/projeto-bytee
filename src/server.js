@@ -11,5 +11,5 @@ app.use(express.json());
 app.use(routes);
 
 app.listen(porta, () => {
-    console.log('Servidor rodando na porta ' + porta);
+    console.log('Servidor rodando em http://localhost:' + porta);
 })

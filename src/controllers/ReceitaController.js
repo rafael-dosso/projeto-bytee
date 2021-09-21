@@ -41,7 +41,7 @@ module.exports = {
     async store(req, res) {
         const { usuarioId } = req.params;
 
-        const { categoriaId, nome, ingredientes, preparo, rendimento } = req.body;
+        const { categoriaId, nome, ingredientes, preparo, rendimento, imagem } = req.body;
 
         const usuario = await Usuario.findByPk(usuarioId);
 
@@ -62,6 +62,7 @@ module.exports = {
             ingredientes,
             preparo,
             rendimento,
+            imagem,
         })
 
         return res.json(receita);

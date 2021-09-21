@@ -7,6 +7,7 @@ class Receita extends Model {
             ingredientes: DataTypes.STRING,
             preparo: DataTypes.STRING,
             rendimento: DataTypes.INTEGER,
+            imagem: DataTypes.STRING,
         }, {
             sequelize,
             tableName: 'receitas'
