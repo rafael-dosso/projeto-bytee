@@ -9,6 +9,7 @@ const routes = express.Router();
 // usuarios
 routes.get('/usuarios/:id', UsuarioController.index);
 routes.get('/usuarios', UsuarioController.list);
+routes.get('/login/:email', UsuarioController.indexEmail);
 routes.post('/usuarios', UsuarioController.store);
 
 // categorias
