@@ -7,9 +7,9 @@ module.exports = {
         },
     },
     host: 'regulus.cotuca.unicamp.br',
-    username: 'BD20154',
-    password: 'BD20154',
-    database: 'BD20154',
+    username: 'BD20149',
+    password: 'BD20149',
+    database: 'BD20149',
     define: {
         timestamps: true,
         freezeTableName: false,
