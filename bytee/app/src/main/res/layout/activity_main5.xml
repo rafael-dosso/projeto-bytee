@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".MainActivity_CadastroReceita"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="648dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="59dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="314dp"
+                    android:layout_height="559dp"
+                    android:layout_weight="1"
+                    android:background="#F4C33B"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:text="Cadastro de Receitas"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="34sp" />
+
+                    <EditText
+                        android:id="@+id/edtCategoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginRight="25dp"
+                        android:ems="10"
+                        android:hint="Categoria (Números)"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/edtNomeReceita"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="25dp"
+                        android:ems="10"
+                        android:hint="Nome"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/edtIngredientes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="25dp"
+                        android:ems="10"
+                        android:hint="Ingredientes"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/edtPreparo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="25dp"
+                        android:ems="10"
+                        android:hint="Preparo"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/edtRendimento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="25dp"
+                        android:ems="10"
+                        android:hint="Rendimento (Números)"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/edtImagemReceita"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="25dp"
+                        android:ems="10"
+                        android:hint="URL da imagem"
+                        android:inputType="textPersonName" />
+
+                    <Button
+                        android:id="@+id/btnCadastrarRec"
+                        android:layout_width="293dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70px"
+                        android:layout_marginTop="50px"
+                        android:backgroundTint="#4D4933"
+                        android:fontFamily="sans-serif"
+                        android:text="cadastrar"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F65145"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgvReceitas"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/open_book" />
+
+            <ImageView
+                android:id="@+id/imgvCadastro"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/contract" />
+
+            <ImageView
+                android:id="@+id/imgvUser"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/chef" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
